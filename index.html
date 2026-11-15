@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Mask Effect — Move Your Mouse Around</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="demo">
+    <h1>CSS Mask Effect</h1>
+
+    <section class="mask-stage" id="maskStage" aria-label="Interactive circular image mask">
+      <div class="sunset-scene" aria-hidden="true">
+        <div class="sky"></div>
+        <div class="sun"></div>
+        <div class="mountain mountain-back"></div>
+        <div class="mountain mountain-mid"></div>
+        <div class="mountain mountain-front"></div>
+        <div class="foreground"></div>
+        <div class="sun-rays"></div>
+      </div>
+      <div class="mask-window" id="maskWindow" aria-hidden="true">
+        <div class="sunset-scene">
+          <div class="sky"></div>
+          <div class="sun"></div>
+          <div class="mountain mountain-back"></div>
+          <div class="mountain mountain-mid"></div>
+          <div class="mountain mountain-front"></div>
+          <div class="foreground"></div>
+          <div class="sun-rays"></div>
+        </div>
+      </div>
+      <div class="crosshair" id="crosshair" aria-hidden="true"><span></span></div>
+      <div class="code-tag">Comment "Mask" for code</div>
+      <div class="bottom-copy">
+        <strong>MASK</strong>
+        <span>Move your mouse around</span>
+      </div>
+      <p class="sr-only" id="instructions">Move your pointer or finger around the stage to move the circular mask.</p>
+    </section>
+    <p class="hint">Move your mouse or touch the stage to reveal the image through the circular mask.</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
